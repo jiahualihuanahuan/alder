@@ -1,0 +1,13 @@
+node_modules
+.grok
+.vercel
+.tanstack
+artifacts
+.env
+.env.*
+*.log
+.node_modules.lock
+dist
+.output
+.nitro
+.vinxi

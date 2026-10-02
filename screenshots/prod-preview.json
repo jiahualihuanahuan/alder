@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Alder",
+      "hasCanvas": false,
+      "bodyTextLen": 5755,
+      "bodyTextHash": "361c34a9e7752952557b0083d415538898a4300aae29f6c4ef564c33f9252131",
+      "bodyTextPrefix": "Alder Whole-life tax plan for Ontario Buying in the GTA Single h",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/prod-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Alder",
+      "hasCanvas": false,
+      "bodyTextLen": 5755,
+      "bodyTextHash": "361c34a9e7752952557b0083d415538898a4300aae29f6c4ef564c33f9252131",
+      "bodyTextPrefix": "Alder Whole-life tax plan for Ontario Buying in the GTA Single h",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/prod-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/prod-preview.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
