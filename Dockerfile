@@ -3,7 +3,10 @@ FROM node:22-bookworm-slim AS build
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci --omit=dev --no-audit --no-fund
+# The lockfile was written with legacy peer deps. A plain `npm ci` tries to
+# install @hookform/resolvers' optional ajv peer and then rejects the lockfile.
+ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+RUN npm ci --legacy-peer-deps --omit=dev --no-audit --no-fund
 
 COPY . .
 
