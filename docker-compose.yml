@@ -5,12 +5,12 @@ services:
       args:
         VITE_AUTH_ENABLED: "false"
     ports:
-      - "8080:8080"
+      - "8070:8070"
     environment:
       HOST: 0.0.0.0
-      PORT: "8080"
+      PORT: "8070"
       NITRO_HOST: 0.0.0.0
-      NITRO_PORT: "8080"
+      NITRO_PORT: "8070"
     restart: unless-stopped
     healthcheck:
       test:
@@ -18,7 +18,7 @@ services:
           "CMD",
           "node",
           "-e",
-          "fetch('http://127.0.0.1:8080/').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+          "fetch('http://127.0.0.1:8070/').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
         ]
       interval: 30s
       timeout: 5s
